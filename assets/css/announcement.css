@@ -1,0 +1,121 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background-color: #4AB1EF;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.announcementhead {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Target h2, .Target p {
+  color: #f1f1f3;
+  font-size: 30em;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.Target {
+  background-color: #1c1c1d;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+
+}
+
+.Announcementcontent{
+  text-align: justify;
+    font-size: 16px; /* Set the desired font size */
+  }
+  
+  .Announcementcontent {
+    font-size: 16px; /* Set the desired font size */
+    
+  }
+  
+  .Announcementcontent p,
+  .Announcementcontent li {
+    font-size: 12px !important; /* Set the same font size for <p> and <li> tags */
+    content: justify;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #0e1f33; /* You can change the color to match your design */
+  }
+  
+
+.numbers-list ol {
+  counter-reset: li;
+  list-style: none;
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+.numbers-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 1em;
+}
+
+.numbers-list li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  background-color: #cea434;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.announcement-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.announcement-actions {
+  display: flex;
+  align-items: center;
+}
+
+.delete-icon {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #4AB1EF;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+<p> <h1>Tabulations and Rankings - Using AJAX<br> Step 1: Frontend (HTML, JavaScript, and AJAX)</h1></p>
+
+<p><h2>In your HTML file, you have a table with some buttons. When the user clicks the &quot;Add Scores&quot; button, you want to allow them to edit the table cells.  When they click the &quot;Clear Scores&quot; button, you want to clear the content of those cells.</h2></p>
+
+<p><h2>To make these buttons work, you'll use JavaScript.  When the &quot;Add Scores&quot; button is clicked,   the JavaScript code will make the table cells editable.   When the &quot;Clear Scores&quot; button is clicked,   the JavaScript code will remove the content from those cells.</h2></p>
+
+<p> <h2>Now, to send the changes made in the table to the server (backend), you'll use AJAX. AJAX is a technique that allows your webpage to communicate with the backend without reloading the entire page. When the user clicks &quot;Add Scores&quot; or &quot;Clear Scores,&quot; the JavaScript code will send the data (edited table cells or the request to clear scores) to a specific URL on the server using AJAX. Step 2: Backend (CodeIgniter - PHP)</h2></p>
+
+<p><h2>In CodeIgniter, you'll create a PHP script (controller) that will listen to the URL where the AJAX data is sent. When the server (backend) receives the data from the AJAX request, it will process it. For example, if the user edited the table cells, the backend will update the corresponding data in the database. If the user clicked &quot;Clear Scores,&quot; the backend will remove the scores from the database. The backend will also ensure that the data received from the frontend is secure. It will sanitize the data to prevent any malicious input and validate it to make sure it's in the expected format. Once the backend has updated the database with the new data or cleared the scores, it will send a response back to the frontend to acknowledge that the operation was successful. Step 3: Frontend (HTML, JavaScript, and AJAX)</h2></p>
+
+<p><h2>After receiving the response from the backend, the JavaScript code on the frontend will process it. If the response indicates that the operation was successful, you can either reload the page to show the updated data or use AJAX again to fetch the updated data from the server and refresh the table without reloading the entire page. The updated data will now be displayed in the table, reflecting the changes made by the user. Security Considerations:</h2></p>
+
+<p><h2>Since user input is involved, it's crucial to handle it securely. The backend will ensure that the data sent by the user is safe to process. This includes protecting against potential attacks like SQL injection, where malicious code could be injected into the database queries. The backend will also check if the user has the necessary permissions to perform the operations (e.g., adding scores or clearing scores). This ensures that only authorized users can make changes to the data.<</h2></p>
+
+<p> <h2>Always validate and sanitize the data received from the frontend to prevent any unexpected behavior or vulnerabilities. Overall, AJAX and CodeIgniter work together to create a smooth interaction between the frontend and backend, allowing users to update data without reloading the entire page. Implementing security measures ensures that your application is safe and secure from potential threats.</h2></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>FOR ATTENDANCE</p>
+
+<p></p>
+
+<p>Assuming you have stored the file path in a variable named $attendanceFilePath, here's how you can update the <td> element to include the view link:</p>
+
+<p>html Copy code <!-- Assuming $attendanceFilePath contains the path to the uploaded attendance file --> <?php // Check if the file path is available before creating the link if (!empty($attendanceFilePath)) {  // Encode the file path to avoid any potential security issues  $encodedFilePath = urlencode($attendanceFilePath);  // Replace the empty href attribute with the link to view the attendance file  echo '<td><a class=&quot;btn btn-primary&quot; href=&quot;view_attendance.php?file=' . $encodedFilePath . '&quot;>View</a></td>'; } else {  // If the file path is empty, display a message or handle it as per your requirement  echo '<td>No attendance file available</td>'; } ?> Please note that the above code is a simplified example and assumes you have already processed the uploaded attendance file and stored the file path in the $attendanceFilePath variable.</p>
+
+<p>Also, make sure to handle any security considerations when generating and serving links to view or download files. For instance, you can validate user permissions, sanitize the file path, and use proper access controls to ensure only authorized users can access the files. Additionally, avoid exposing sensitive file paths directly in the URL; instead, use an identifier or token associated with the file.</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>FOR VIEW PARTICIPANTS</p>
+
+<p> Yes, you can definitely change the team members into names from the database. In the provided design, the team members' names are manually added as placeholders for demonstration purposes. However, in a real-world application, you would typically fetch the team members' data from the database using PHP and SQL queries.</p>
+
+<p>Here's a general outline of the steps you would take to replace the placeholder names with actual names from the database:</p>
+
+<p>Set up your database: Create a table in your database to store team member information, such as their names and the team they belong to.</p>
+
+<p>Write PHP code to fetch data: In your PHP code, use SQL queries to fetch the team member names from the database. You can use database connectors like PDO or mysqli to interact with the database.</p>
+
+<p>Format the data in HTML: Once you have retrieved the team member names from the database, you can use PHP to dynamically generate the HTML structure with the appropriate data. Instead of using placeholder names like in the previous examples, you would loop through the database results and display the team member names accordingly.</p>
+
+<p>For example, your PHP code might look something like this:</p>
+
+<p>php</p>
+
+<p> <?php // Assuming you have fetched the participants data from the database into an array called $participantsData</p>
+
+<p>function ViewParticipants($participantsData) {  $html = '';  foreach ($participantsData as $participant) {  $activityName = $participant['activity_name']; // Assuming you have an 'activity_name' field in the database  $participantName = $participant['participant_name']; // Assuming you have a 'participant_name' field in the database</p>
+
+<p> $html .= '<div class=&quot;participant-box&quot;>';  $html .= '<p class=&quot;activity-title&quot;>' . $activityName . ' Activity Participants:</p>';  $html .= '<ul>';  $html .= '<li>' . $participantName . '</li>';  $html .= '</ul>';  $html .= '</div>';  }  return $html; }</p>
+
+<p>// Use this function to generate the HTML inside the Swal modal $participantsHTML = ViewParticipants($participantsData); ?></p>
+
+<p></p>
+
+<p> The above code snippet assumes that you have fetched the team member data from the database and stored it in an array called $teamMembersData. You can then use the generateTeamMembersHTML() function to generate the appropriate HTML structure based on the fetched data.</p>
+
+<p>When you call the ViewParticipants function with the $participantsData array that contains the data fetched from the database, it will generate the appropriate HTML structure for displaying the participants of a certain activity inside the Swal modal.</p>
+
+<p>Please make sure to replace the assumed field names (activity_name and participant_name) with the actual field names you have in your database table. Additionally, ensure that the $participantsData array contains the data you fetched from the database for the specific activity you want to display the participants for.</p>

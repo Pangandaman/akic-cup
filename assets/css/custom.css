@@ -1,0 +1,851 @@
+/*
+Custom Css
+*/
+
+
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;   
+}
+
+.text-center{
+
+  font-size: 0.875em;
+}
+
+
+
+h4{
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Add relative positioning to the body */
+}
+
+footer {
+  background-color: #6d7781;
+  color: #ffffff;
+  text-align: right;
+  padding: 10px;
+  position: absolute; /* Use absolute positioning */
+  bottom: 0; /* Position the footer at the bottom */
+  right: 0;
+  width: 100%; /* Set the footer width to 100% to extend it across the screen */
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+.righty{
+
+  float: right;
+}
+.row-cols-lg-5>* {
+    flex: 0 0 auto;
+    width: 0% important;
+}
+
+.Positions{
+
+margin: 15px;
+color: #1b59a4 !important;
+}
+
+.gya{
+
+  border: 2px solid black;
+  padding: 15px;
+  margin: 20px;
+}
+a.button1{
+display:inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#f1f1f3;
+text-align:center;
+transition: all 0.2s;
+background-color: #0e1f33;
+cursor: pointer;
+}
+a.button1:hover{
+color: #f1f1f3;
+
+background-color: #122948;
+}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
+}
+
+
+
+
+
+.teamcaro{
+    background-color: #ddb634; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.teamcaro:hover{
+  background-color: #193153;
+  color: white !important;
+  cursor: pointer;
+}
+
+ 
+
+ul {
+    list-style-type: NUMBER;
+    padding: 0;
+display: inline-block;
+}
+
+
+    .relative {
+        
+            position: relative;
+            background-color: #fff;
+          padding: 20px;
+             display: flex;
+  justify-content: center;
+  align-items: center;
+
+        }
+
+
+.navitem {
+  display: inline-block;
+  width: 100px; 
+  height: 50px; 
+  margin: 20px;
+  text-align: center;
+  border: gray;
+  background-color: #0e1f33;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+  .clear-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    cursor: pointer;
+
+  }
+
+
+
+    .wrapper {
+    position: relative;
+    display: flex;
+    min-width: 500px;
+  }
+.card{
+
+    box-shadow: 10px;
+}
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  border: 2px solid hsl(0deg 0% 52%);
+  border-radius: 7px;
+  width: 20em;
+     color: black !important;
+background-color: #f1f1f3;
+}
+
+.accordion h3 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.accordion:focus-within {
+  border-color: black;
+
+}
+
+.accordion:focus-within h3 {
+  background-color: hsl(0deg 0% 97%);
+}
+
+.accordion > * + * {
+  border-top: 1px solid hsl(0deg 0% 52%);
+    color: black;
+}
+
+.accordion-trigger {
+  background: none;
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 1em 1.5em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  outline: none;
+}
+
+.accordion-trigger:focus,
+.accordion-trigger:hover {
+  background-color: #f1f1f3;
+}
+
+.accordion-trigger:focus {
+  outline: 4px solid transparent;
+}
+
+.accordion > *:first-child .accordion-trigger,
+.accordion > *:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion > *:last-child .accordion-trigger,
+.accordion > *:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+button {
+  border-style: none;
+}
+
+.accordion button::-moz-focus-inner {
+    color: black;
+  border: 0;
+}
+
+.accordion-title {
+  display: block;
+  pointer-events: none;
+  border: transparent 2px solid;
+  border-radius: 5px;
+  padding: 0.25em;
+  outline: none;
+  color: black;
+}
+
+.accordion-trigger:focus .accordion-title {
+  border-color: hsl(500deg 94% 43%);
+    color: black;
+}
+
+.accordion-icon {
+    color: white;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  height: 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-60%) rotate(45deg);
+  width: 0.5rem;
+}
+
+.accordion-trigger:focus .accordion-icon,
+.accordion-trigger:hover .accordion-icon {
+  border-color: hsl(500deg 94% 43%);
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
+      color: black;
+}
+
+.accordion-panel {
+  margin: 0;
+  padding: 1em 1.5em;
+  background-color: #f1f1f3;
+    color: black;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+.accordionz {
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.panelz {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel {
+  padding-bottom: 250px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+input[type="file"] {
+    width: 200px;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.note p{
+
+  color: grey;
+}
+
+
+.active, .accordion:hover {
+
+  color: white !important;
+}
+
+
+
+/* Search Input */
+#searchInput {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+}
+
+/* Search Button */
+#searchButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+
+input{
+	color: rgb(5, 5, 5);
+  float: left;
+  text-align: left;
+}
+
+
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: black;
+}
+
+.card {
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.login {
+  min-height: 100vh;
+}
+
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+
+
+
+.Articles{
+font-size: 25px;
+  color: black;
+  text-align: center;
+  font-family: Stencil Std, fantasy;
+background-color: #f1f1f3;
+padding: 20px;
+
+}
+.sections{
+  margin: 50px;
+   text-align: justify;
+  text-justify: inter-word;
+}
+
+.sections p{
+  font-size: 0.875em !important;
+}
+
+
+
+
+.Adviser p{
+
+align-items: center;
+text-align: center;
+}
+
+
+.infos{
+color: black;
+text-align: center;
+padding: 2px;
+
+}
+
+.list-group-item .d-flex .justify-content-between .align-items-center .p-3 li, button{
+
+ background-color: #007bff;
+  border-radius: 5px;
+  color: #f1f1f3 !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center !important;
+
+}
+
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("fonts/nunito-sans/nunito-sans-regular.woff2") format("woff2"),
+       url("fonts/nunito-sans/nunito-sans-regular.woff") format("woff"),
+       url("fonts/nunito-sans/nunito-sans-regular.ttf") format("truetype");
+  /* Add more formats if you have additional font files */
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-weight: bold;
+  src: url("fonts/nunito-sans-bold/nunito-sans-bold.woff2") format("woff2"),
+       url("fonts/nunito-sans-bold/nunito-sans-bold.woff") format("woff"),
+       url("fonts/nunito-sans-bold/nunito-sans-bold.ttf") format("truetype");
+  /* Add more formats if you have additional font files */
+}
+
+
+
+/* Add some basic styles to the table */
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-collapse: collapse;
+
+}
+
+/* Add padding and alignment to table header cells */
+.table thead th {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Add padding and alignment to table data cells */
+.table tbody td {
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+
+/* Style the "Update" and "Remove" buttons */
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+}
+
+/* Add some responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+  
+  .table tbody thead td th{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+
+  }
+  
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .table tbody tr {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+
+  }
+}
+
+/* Custom CSS for the responsive table */
+.table-responsive-custom {
+  overflow-x: auto;
+}
+
+.table-responsive {
+height: 100vh;
+}
+
+/* Add styles to make the table responsive for smaller screens */
+@media (max-width: 768px) {
+  .table-responsive-custom table {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .table-responsive-custom thead {
+      display: none;
+  }
+
+  .table-responsive-custom tbody td,
+  .table-responsive-custom tbody th {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .table-responsive-custom tbody td::before,
+  .table-responsive-custom tbody th::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.5em;
+  }
+
+  .table-responsive-custom tbody tr {
+      margin-bottom: 1em;
+      border-bottom: 1px solid #ddd;
+  }
+}
+
+
+#ScoreButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* styles.css */
+
+/* styles.css */
+
+.rank-input-group {
+  display: flex;
+  align-items: center;
+}
+
+.rank-input-group label {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.rank-input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.rank-input:focus {
+  border-color: #007bff;
+}
+
+
+#loadingView {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide the iframe initially */
+#externalIframe {
+  display: none;
+}
+
+/* Style for the icon link */
+.assign-icon {
+  cursor: pointer;
+  color: #007bff; /* Blue color for the icon */
+  font-size: 24px;
+}
+
+/* Style for the icon link on hover */
+.assign-icon:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.update-icon {
+  cursor: pointer;
+  color: #007bff; /* Blue color for the icon */
+  font-size: 24px;
+}
+
+/* Style for the update icon link on hover */
+.update-icon:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the unordered list */
+.AdviserList ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block; /* Use Flexbox to align items horizontally */
+  align-items: center; /* Center the items vertically */
+}
+
+/* Style for the list items (advisers) */
+.AdviserList li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Push the icon to the right side */
+.AdviserList .assign-icon {
+  margin-left: auto;
+}
+
+/* THIS IS THE MODAL IN PARTICIPATIONS */
+
+/* Custom class for the Swal popup */
+.participant-list-popup {
+  text-align: left;
+}
+
+/* Style for the team lists */
+.team-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block; /* Display horizontally */
+  margin-right: 10px; /* Add spacing between team boxes */
+}
+
+.team-title {
+  font-weight: bold;
+  margin: 2px;
+  text-decoration: underline;
+}
+
+.team-box li {
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 5px;
+}

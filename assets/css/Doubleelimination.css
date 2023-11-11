@@ -1,0 +1,34 @@
+ body {
+            font-family: Arial, sans-serif;
+        }
+
+        .team {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        .match {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .match .team {
+            margin: 5px;
+        }
+
+        .match .team:first-child {
+            margin-right: 20px;
+        }
+
+        .winner {
+            font-weight: bold;
+            color: green;
+        }
+
+        .loser {
+            font-weight: bold;
+            color: red;
+        }

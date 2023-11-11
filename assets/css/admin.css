@@ -1,0 +1,680 @@
+
+/*
+Custom Css
+*/
+
+h6{
+    color: black;
+ }
+
+
+
+.card{
+
+
+  background-position: center;
+    background-size: cover; 
+    transition: transform 0.5s;
+
+
+
+}
+
+    .card:hover{
+  transform: translateY(-10px);
+}
+
+
+h5{
+  color: black;
+}
+
+.teamcaro{
+  width: 180px;
+  color: #cea434 !important;
+  font-size: 20px;
+  padding: 12px 0;
+  background: #0e1f33;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.teamcaro:hover{
+  background-color: #193153;
+  color: white !important;
+  cursor: pointer;
+}
+
+ 
+
+
+
+  .clear-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    cursor: pointer;
+
+  }
+
+.white{
+  color: white;
+  text-decoration: none;
+
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    min-width: 500px;
+  }
+
+.card{
+    box-shadow: 10px;
+}
+
+.topnav-right {
+  float: right;
+  padding: 20px;
+}
+
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  border: 2px solid hsl(0deg 0% 52%);
+  border-radius: 7px;
+  width: 20em;
+     color: black !important;
+background-color: #f1f1f3;
+}
+
+.accordion h3 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.accordion:focus-within {
+  border-color: black;
+
+}
+
+.accordion:focus-within h3 {
+  background-color: hsl(0deg 0% 97%);
+}
+
+.accordion > * + * {
+  border-top: 1px solid hsl(0deg 0% 52%);
+    color: black;
+}
+
+.accordion-trigger {
+  background: none;
+  color: black;
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 1em 1.5em;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  outline: none;
+}
+
+.accordion-trigger:focus,
+.accordion-trigger:hover {
+  background-color: #f1f1f3;
+}
+
+.accordion-trigger:focus {
+  outline: 4px solid transparent;
+}
+
+.accordion > *:first-child .accordion-trigger,
+.accordion > *:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordion > *:last-child .accordion-trigger,
+.accordion > *:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+button {
+  border-style: none;
+  font-size: 4vw;
+}
+
+.accordion button::-moz-focus-inner {
+    color: black;
+  border: 0;
+}
+
+.accordion-title {
+  display: block;
+  pointer-events: none;
+  border: transparent 2px solid;
+  border-radius: 5px;
+  padding: 0.25em;
+  outline: none;
+  color: black;
+}
+
+.accordion-trigger:focus .accordion-title {
+  border-color: hsl(500deg 94% 43%);
+    color: black;
+}
+
+.accordion-icon {
+    color: white;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  height: 0.5rem;
+  pointer-events: none;
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-60%) rotate(45deg);
+  width: 0.5rem;
+}
+
+.accordion-trigger:focus .accordion-icon,
+.accordion-trigger:hover .accordion-icon {
+  border-color: hsl(500deg 94% 43%);
+}
+
+.accordion-trigger[aria-expanded="true"] .accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
+      color: black;
+}
+
+.accordion-panel {
+  margin: 0;
+  padding: 1em 1.5em;
+  background-color: #f1f1f3;
+    color: black;
+}
+
+/* For Edge bug https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4806035/ */
+.accordion-panel[hidden] {
+  display: none;
+}
+
+
+
+#searchbar{
+   
+     padding:15px;
+     border-radius: 10px;
+     margin: 25px;
+   }
+ 
+  
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+.addie{
+ 
+  background-color: #193153;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.note p{
+
+  color: grey;
+}
+
+
+.active, .accordion:hover {
+   background-image: url('./assets/img/home.png');
+  background-color: #193153; 
+  color: white !important;
+}
+
+.panel {
+  padding: 50px 50px;
+  display: none;
+  background-color: white; 
+  overflow: hidden;
+  color: black;
+}
+
+.navbar-brand text-success .logo h1 .align-self-center {
+
+text-decoration: underline;
+color: #cea434 !important;
+
+}
+
+
+
+
+
+header{
+   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	background-color: #193153;
+}
+
+input{
+	color: white;
+}
+
+
+
+
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #ffffff;
+    color: #050505;
+}
+
+
+a.button1{
+display:inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid #FFFFFF;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#f1f1f3;
+text-align:center;
+transition: all 0.2s;
+background-color: #0e1f33;
+cursor: pointer;
+}
+a.button1:hover{
+color: #f1f1f3;
+
+background-color: #122948;
+}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
+}
+
+
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+
+.clear {
+  clear: both;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('C:/Users/Mohammad/Desktop/Amr/181/assets/img/home.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+
+.Articles{
+font-size: 40px;
+  color: black;
+  text-align: center;
+  font-family: Stencil Std, fantasy;
+}
+.sections{
+
+justify-content: center;
+color: black;
+margin: 100px;
+
+}
+
+
+
+
+.Adviser p{
+
+align-items: center;
+text-align: center;
+}
+
+
+.infos{
+color: black;
+text-align: center;
+padding: 2px;
+
+}
+
+.list-group-item .d-flex .justify-content-between .align-items-center .p-3 li, button{
+
+ background-color: #df1b1b; /* Green */
+  border-radius: 5px;
+  color: #f1f1f3 !important;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-align:center !important;
+
+}
+
+
+
+ button:hover{
+   background-color: #f51e30; /* Green */
+ 
+  color: white !important;
+
+
+}
+
+
+
+.button1 {
+ background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white
+}
+
+
+.button2{
+  background-color: black; 
+  color: black; 
+  font-size: 2vw;
+  border: 2px solid #4CAF50;
+}
+
+.button2:hover {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 4vw;
+}
+
+
+
+
+.button3 {
+   background-color: red; 
+  color: black; 
+  border: 2px solid #f44336;
+
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.custom-select {
+margin: 20px !important;
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+  
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+

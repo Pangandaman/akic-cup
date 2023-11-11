@@ -1,0 +1,57 @@
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+              font-weight: bold;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+
+        }
+        
+        .team {
+            
+        }
+        
+        .vs {
+           color: rgb(254,255,91);
+    font-size: 30px;
+    background: -webkit-linear-gradient(red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Act of Rejection;
+    text-shadow: 2px 1px 1px;
+
+    
+        }
+
+        .cent h2{
+
+            text-align: center;
+            color: red !important;
+        }
+.team{
+
+
+    background-color: #193153;
+    color: white;
+}
+
+        .lose{
+
+            background-color: #e99191;
+            color: #ee3e3e;
+        }
+
+
+        .win{
+
+            background-color: #6ff078;
+            color: #11b41b;
+        }
